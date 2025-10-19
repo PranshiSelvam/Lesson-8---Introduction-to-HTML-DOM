@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>Objects and Arrays Project</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+                padding: 20px;
+            }
+    
+            h1 {
+                color: #0077cc;
+            }
+    
+            .output {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                margin-top: 10px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <h1>JavaScript Objects and Arrays Project</h1>
+        <div class="output" id="output"></div>
+    
+        <script>
+    
+            let student = {
+                name: "Pranshi Selvam",
+                age: 13,
+                grade: "8th",
+                hobbies: ["Swimming", "Discus Throw", "Reading"]
+            };
+
+            let fruits = ["Apple", "Banana", "Cherry", "Mango"];
+
+            let result = "";
+            result += "<strong>Student Details:</strong><br>";
+            result += "Name: " + student.name + "<br>";
+            result += "Age: " + student.age + "<br>";
+            result += "Grade: " + student.grade + "<br>";
+            result += "Hobbies: " + student.hobbies.join(", ") + "<br><br>";
+
+            result += "<strong>Fruits List:</strong><br>";
+            result += "First Fruit: " + fruits[0] + "<br>";
+            result += "Second Fruit: " + fruits[1] + "<br>";
+            result += "Third Fruit: " + fruits[2] + "<br><br>";
+
+            result += "All Fruits (joined): " + fruits.join(" | ") + "<br><br>";
+
+            let removedFruit = fruits.pop();
+            result += "Removed Fruit (using pop): " + removedFruit + "<br>";
+
+            result += "Updated Fruits Array: " + fruits.join(", ") + "<br>";
+
+            document.getElementById("output").innerHTML = result;
+        </script>
+    
+    </body>
+    
+    </html>
+
+</body>
+</html>
